@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ENCRIPTADOR</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <header>
+            <div id="titulo"><h1>ENCRIPTADOR ALURA</h1></div>
+        </header>
+        <main class="caja">
+            <form onsubmit="return false;" class="contenedor">
+                <input type="text" id="textoEncriptar" placeholder="Ingrese texto aquí" class="labels" required>
+
+                <input type="submit" id="botonEncriptar" value="Encriptar" onclick="encriptarTexto()" div="botones" class="botones">
+
+                <input type="submit" id="botonDesencriptar" value="Desencriptar" onclick="desencriptarTexto()" class="botones">
+
+                <input type="text" id="textoModificado" disabled placeholder="Ningún mensaje fue encriptado" class="labels">
+
+                <input type="submit" id="copiarTexto" value="Copiar y borrar" onclick="copiarBorrarTextoModificado()" class="botones">
+
+            </form>
+        </main>
+
+
+
+        <footer>
+            <p class="copyright">&copy Copyright Encriptador 2024</p>
+        </footer>
+        <script src="encriptador.js"></script>
+    </div>
+
+</body>
+</html>
